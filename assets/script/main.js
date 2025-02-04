@@ -18,4 +18,8 @@ playMusicButton.addEventListener('click', () => {
 });
 
 // Ensure music autoplay works on mobile devices
-document.addEventListener('touchstart',
+document.addEventListener('touchstart', () => {
+  if (music.paused) {
+    music.play();
+  }
+}, { once: true });
