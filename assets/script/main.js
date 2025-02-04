@@ -1,6 +1,8 @@
 // Function to open TikTok link
 function openTikTok() {
-  window.open("https://www.tiktok.com/", "_blank");
+  // Replace this URL with your TikTok video link
+  const tiktokUrl = "https://vt.tiktok.com/ZS6KXtJno/";
+  window.open(tiktokUrl, "_blank");
 }
 
 // Play background music
