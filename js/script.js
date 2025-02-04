@@ -3,9 +3,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const heart = document.querySelector('.heart');
 
     changeColorButton.addEventListener('click', () => {
-        heart.style.backgroundColor = getRandomColor();
-        heart.style.setProperty('--before-color', getRandomColor());
-        heart.style.setProperty('--after-color', getRandomColor());
+        const newColor = getRandomColor();
+        heart.style.backgroundColor = newColor;
+        heart.style.setProperty('--before-color', newColor);
+        heart.style.setProperty('--after-color', newColor);
+        changeColorButton.style.backgroundColor = newColor; // Change button color to match heart
     });
 
     function getRandomColor() {
