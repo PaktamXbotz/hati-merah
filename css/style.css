@@ -33,6 +33,7 @@ h1 {
     transform: rotate(-45deg);
     margin: 20px auto;
     animation: pulse 1.5s infinite;
+    box-shadow: 0 4px 20px rgba(255, 0, 0, 0.5);
 }
 
 .heart::before,
@@ -63,6 +64,7 @@ h1 {
     background-color: white;
     border-radius: 50%;
     animation: move 1s infinite alternate;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
 }
 
 .dna:nth-child(1) { top: 20px; left: 20px; }
@@ -101,6 +103,7 @@ button {
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 10px rgba(255, 105, 180, 0.5);
 }
 
 button:hover {
